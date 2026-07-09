@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YEMMIGANUR-KVR Lab // Full-Stack Developer & Campaign Technologist</title>
+  <meta name="description" content="Portfolio of a Full-Stack Developer & YEMMIGANUR-KVR Campaign Technologist building digital infrastructure, voter tools, and campaign systems for Telugu Desam Party (TDP).">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome / Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-symbol">✦</span> YEMMIGANUR-<span class="logo-highlight">KVR</span>
+      </a>
+      
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu">
+        <a href="#tdp-projects" class="nav-link">TDP Campaigns</a>
+        <a href="#voter-id" class="nav-link">Voter ID Tool</a>
+        <a href="#party-membership" class="nav-link">Party Membership</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="#party-membership" class="btn btn-sm btn-outline">Join Tech Cadre</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="logo"><span class="logo-symbol">✦</span> YEMMIGANUR-<span class="logo-highlight">KVR</span></span>
+      <button class="mobile-menu-close" aria-label="Close Navigation">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="drawer-links">
+      <a href="#tdp-projects" class="drawer-link">TDP Campaigns</a>
+      <a href="#voter-id" class="drawer-link">Voter ID Tool</a>
+      <a href="#party-membership" class="drawer-link">Party Membership</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <a href="#party-membership" class="btn btn-primary btn-full">Join Tech Cadre</a>
+    </nav>
+  </div>
+
+  <main class="main-layout">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          <span>Open for YEMMIGANUR-KVR Campaign Tech</span>
+        </div>
+        <h1 class="hero-title reveal">
+          Building the <span class="highlight-gradient">Digital Infrastructure</span> for Modern Democracy.
+        </h1>
+        <p class="hero-subtitle reveal">
+          I am a Full-Stack Engineer crafting high-performance voter databases, GIS mapping systems, and community portals to scale mass public campaigns and empower democratic governance.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#tdp-projects" class="btn btn-primary">
+            VAMSI REDDY <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+          <a href="#party-membership" class="btn btn-secondary">
+            MURALI KRISHNA REDDY <i data-lucide="users" class="btn-icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Showcase: TDP Projects & Campaigns -->
+    <section id="tdp-projects" class="section-container scroll-margin">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">// DIGITAL INITIATIVES</span>
+          <h2 class="section-title">Telugu Desam Tech Hub</h2>
+        </div>
+        <p class="section-description">
+          A showcase of custom voter lookup utilities, cadres dashboards, and data analytics tools engineered to streamline grass-root operations.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Card 1: Large Featured Project -->
+        <div class="bento-card col-span-2 row-span-2 project-card hover-lift">
+          <div class="project-image-box">
+            <img src="file:///C:/Users/Student/Downloads/WhatsApp%20Image%202026-07-09%20at%2011.25.12%20AM.jpeg" alt="TDP Rally Campaign" class="project-card-image">
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">GIS</span>
+            </div>
+            <h3 class="project-card-title">Telugu Desam Party Analytics Portal</h3>
+            <p class="project-card-text">
+              A comprehensive voter demographics and constituency-wise sentiment analysis platform. Features interactive geospatial map layers, real-time polling data consolidation, and auto-generated reports for constituency leaders.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="btn btn-sm btn-primary">TDP Portal</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Regular Card (Cadre System) -->
+        <div class="bento-card project-card hover-lift">
+          <div class="project-image-box small">
+            <img src="file:///C:/Users/Student/Downloads/WhatsApp%20Image%202026-07-09%20at%2011.25.38%20AM.jpeg" alt="TDP Ground Interaction" class="project-card-image">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Redis</span>
+            </div>
+            <h3 class="project-card-title">Cadre Management Portal</h3>
+            <p class="project-card-text">
+              Backend API and administration dashboard tracking over 5 million TDP volunteers, managing localized verification workflows and instant SMS alerts.
+            </p>
+            <div class="project-footer">
+              <a href="#party-membership" class="btn btn-sm btn-secondary">TELUGU DESAM</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Regular Card (GIS Mapper) -->
+        <div class="bento-card project-card hover-lift">
+          <div class="project-image-box small">
+            <img src="assets/Telugu_Desam_Party_Flag-480x280.png" onerror="this.src='file:///C:/Users/Student/Downloads/Telugu_Desam_Party_Flag-480x280.png'" alt="Telugu Desam Party Flag" class="project-card-image">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Leaflet.js</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">PostGIS</span>
+            </div>
+            <h3 class="project-card-title">Constituency GIS Mapper</h3>
+            <p class="project-card-text">
+              High-accuracy geographic mapping interface overlaying infrastructure project milestones, local grievances, and voter densities across assembly limits.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="btn btn-sm btn-secondary">TDP Analytics</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Field Deployments -->
+        <div class="bento-card col-span-2 project-card hover-lift">
+          <div class="project-image-box">
+            <img src="file:///C:/Users/Student/Downloads/WhatsApp%20Unknown%202026-07-09%20at%2011.24.56%20AM/WhatsApp%20Image%202026-07-09%20at%2011.20.52%20AM.jpeg" alt="TDP Field Campaign Support" class="project-card-image">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Field Tech</span>
+              <span class="tag">Cadre Support</span>
+              <span class="tag">Mobile Systems</span>
+            </div>
+            <h3 class="project-card-title">Grassroots Field Deployment</h3>
+            <p class="project-card-text">
+              Real-time monitoring and digital support setup for polling stations, providing live connection channels and ground data entry utilities for active volunteers.
+            </p>
+            <div class="project-footer">
+              <span style="font-size: 0.85rem; color: var(--accent-yellow); font-weight: 600;">ACTIVE IN 15 CONSTITUENCIES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voter ID Search Section (Interactive Simulator) -->
+    <section id="voter-id" class="section-container scroll-margin bg-alt-section">
+      <div class="voter-tool-card">
+        <div class="tool-info">
+          <span class="section-tag">// CIVIC UTILITY</span>
+          <h2 class="section-title">Voter ID Query Simulator</h2>
+          <p class="tool-desc">
+            To demonstrate our database speed and user flow design, we built this simulated Voter Registration status tool. Enter a mock Voter ID code below to search database records.
+          </p>
+          <div class="mock-tips">
+            <p><strong>Try these mock Voter IDs to test results:</strong></p>
+            <ul>
+              <li><code>AP-TDP-2026-99</code> (Registered - Active Cadre)</li>
+              <li><code>AP-CBN-1950-01</code> (Registered - Executive Officer)</li>
+              <li><code>AP-MURALI-1983-02</code> (Registered - Youth Wing Leader)</li>
+              <li><code>AP-NEW-2026-05</code> (Pending Approval)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tool-interactive">
+          <div class="sim-card">
+            <div class="sim-header">
+              <div class="dot-buttons">
+                <span class="dot-btn red"></span>
+                <span class="dot-btn yellow"></span>
+                <span class="dot-btn green"></span>
+              </div>
+              <span class="sim-title">Live API Query Console</span>
+            </div>
+            <div class="sim-body">
+              <label for="voterIdInput" class="sim-label">Enter State Voter Card ID (VOTER ID)</label>
+              <div class="sim-search-row">
+                <input type="text" id="voterIdInput" class="sim-input" placeholder="e.g., AP-TDP-2026-99" aria-label="Mock Voter ID Code">
+                <button type="button" id="voterSearchBtn" class="btn btn-primary btn-search">
+                  <span>Query</span> <i data-lucide="search" class="btn-icon"></i>
+                </button>
+              </div>
+
+              <!-- Simulator Results Pane -->
+              <div class="sim-results-pane" id="voterResultsPane">
+                <div class="empty-state">
+                  <i data-lucide="database" class="empty-icon"></i>
+                  <p>Awaiting query. Enter an ID above to check database response.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Party Membership Form (Interactive Simulator) -->
+    <section id="party-membership" class="section-container scroll-margin">
+      <div class="membership-split">
+        <div class="membership-details">
+          <span class="section-tag">// DIGITAL CADRE</span>
+          <h2 class="section-title">Telugu Desam Digital Membership</h2>
+          <p class="membership-text">
+            Join the digital wing of the Telugu Desam Party (TDP). Our web infrastructure powers instant verification, digital card generation, and secure networking for ground volunteers.
+          </p>
+          <div class="vision-quotes">
+            <blockquote>
+              "Technology is the ultimate equalizer. We must bring tech to the grassroots to empower every citizen."
+              <cite>— N. Chandrababu Naidu (CBN)</cite>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="membership-form-box">
+          <div class="bento-card form-card">
+            <h3 class="form-card-title">Generate Cadre Digital Card</h3>
+            <p class="form-card-subtitle">Fill in details to simulate cadre registration and generate your digital pass.</p>
+            
+            <form id="cadreForm" class="cadre-form" onsubmit="return false;">
+              <div class="form-group">
+                <label for="cadreName" class="form-label">Full Name</label>
+                <input type="text" id="cadreName" class="form-input" placeholder="e.g., Ananth Kumar" required>
+              </div>
+              <div class="form-group">
+                <label for="cadreConstituency" class="form-label">Constituency</label>
+                <select id="cadreConstituency" class="form-select" required>
+                  <option value="" disabled selected>Select Constituency</option>
+                  <option value="Kuppam">Kuppam</option>
+                  <option value="Mangalagiri">Mangalagiri</option>
+                  <option value="Vijayawada Central">Vijayawada Central</option>
+                  <option value="Visakhapatnam East">Visakhapatnam East</option>
+                  <option value="Tirupati">Tirupati</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cadrePhone" class="form-label">Phone Number</label>
+                <input type="tel" id="cadrePhone" class="form-input" placeholder="e.g., 98765 43210" pattern="[0-9]{10,12}" required>
+              </div>
+              
+              <button type="submit" id="generateCardBtn" class="btn btn-primary btn-full">
+                Generate Digital Card <i data-lucide="credit-card" class="btn-icon"></i>
+              </button>
+            </form>
+
+            <!-- Generated ID Card Output -->
+            <div id="generatedCardContainer" class="generated-card-container hidden">
+              <div class="digital-id-card">
+                <div class="card-inner">
+                  <div class="card-header">
+                    <span class="card-logo">✦ TDP CADRE</span>
+                    <span class="card-chip"></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-avatar">
+                      <i data-lucide="user" class="avatar-icon"></i>
+                    </div>
+                    <div class="card-meta">
+                      <h4 id="cardNameDisplay" class="card-name">Ananth Kumar</h4>
+                      <p class="card-role">Digital Volunteer</p>
+                      <p class="card-constituency">Constituency: <strong id="cardConstDisplay">Kuppam</strong></p>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-id-num">ID: TDP-2026-77894</span>
+                    <span class="card-status-badge">Verified</span>
+                  </div>
+                </div>
+              </div>
+              <button type="button" id="resetCardBtn" class="btn btn-sm btn-outline btn-full margin-top-sm">
+                Register New Cadre
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-container scroll-margin bg-alt-section">
+      <div class="about-grid">
+        
+        <!-- Left Bio Column -->
+        <div class="about-bio">
+          <span class="section-tag">// THE DEVELOPER</span>
+          <h2 class="section-title">Building Civic Platforms That Scale</h2>
+          <p class="about-para">
+            I am a full-stack engineer and interface designer dedicated to developing robust digital solutions that support citizen engagement, voter information accessibility, and large-scale democratic campaigns.
+          </p>
+          <p class="about-para">
+            With a focus on speed, high availability, and geographic data mapping, I collaborate with civic labs, grassroots campaigners, and progressive representatives to bring government and citizen communications online. My work bridges the gap between massive backend databases and highly readable user interfaces.
+          </p>
+          
+          <h3 class="skills-title">Core Technology Toolkit</h3>
+          <div class="skills-cloud">
+            <span class="skill-badge"><i data-lucide="code-2" class="skill-icon"></i> React / Next.js</span>
+            <span class="skill-badge"><i data-lucide="database" class="skill-icon"></i> PostgreSQL</span>
+            <span class="skill-badge"><i data-lucide="terminal" class="skill-icon"></i> Python / Django</span>
+            <span class="skill-badge"><i data-lucide="map" class="skill-icon"></i> Leaflet / PostGIS</span>
+            <span class="skill-badge"><i data-lucide="layers" class="skill-icon"></i> Node.js</span>
+            <span class="skill-badge"><i data-lucide="palette" class="skill-icon"></i> Figma / UX</span>
+            <span class="skill-badge"><i data-lucide="server" class="skill-icon"></i> Redis / Caching</span>
+            <span class="skill-badge"><i data-lucide="git-pull-request" class="skill-icon"></i> Git / CI-CD</span>
+          </div>
+        </div>
+
+        <!-- Right Styled Avatar/Tech Graphic Box -->
+        <div class="about-graphic-box">
+          <div class="tech-art-container">
+            <div class="art-layer art-border"></div>
+            <img src="file:///C:/Users/Student/Downloads/WhatsApp%20Unknown%202026-07-09%20at%2011.24.56%20AM/WhatsApp%20Image%202026-07-09%20at%2011.20.51%20AM.jpeg" alt="Vamsi Reddy Campaign Event" class="tech-art-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container scroll-margin">
+      <div class="contact-card">
+        <div class="contact-header">
+          <span class="section-tag">// SECURE UPLINK</span>
+          <h2 class="section-title">Initiate a Collaboration</h2>
+          <p class="contact-subtitle">
+            Need high-performance election dashboards, local mapping support, or digital cadre tools? Fill out the contact form below.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="contactName" class="form-label">Full Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group flex-1">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Message / Project Description</label>
+            <textarea id="contactMessage" class="form-input text-area" placeholder="How can we build together?" rows="5" required></textarea>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary">
+              Send Secure Message <i data-lucide="send" class="btn-icon"></i>
+            </button>
+          </div>
+          
+          <div id="contactFeedback" class="form-feedback hidden"></div>
+        </form>
+
+        <div class="social-links-container">
+          <p class="social-title">Connect with me on digital channels:</p>
+          <div class="social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter / X">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <p class="copyright">&copy; 2026 YEMMIGANUR-KVR Lab. All Rights Reserved. Empowered by technology.</p>
+        <p class="footer-tagline">Engineered with speed, security, and precision.</p>
+      </div>
+      <a href="#" class="back-to-top-btn" aria-label="Scroll Back to Top">
+        <span>Back to Top</span> <i data-lucide="arrow-up" class="footer-icon"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
